@@ -1,82 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" class="" style="height: auto;">
- <?php require_once('inc/header.php') ?>
-<body class="hold-transition login-page">
-  <script>
-    start_loader()
-  </script>
-  <style>
-    body{
-      background-image: url("<?php echo validate_image($_settings->info('cover')) ?>");
-      background-size:cover;
-      background-repeat:no-repeat;
-      backdrop-filter: contrast(1);
-    }
-    #page-title{
-      text-shadow: 6px 4px 7px black;
-      font-size: 3.5em;
-      color: #fff4f4 !important;
-      background: #8080801c;
-    }
-  </style>
-  <h1 class="text-center text-white px-4 py-5" id="page-title"><b><?php echo $_settings->info('name') ?></b></h1>
-<div class="login-box">
-  <!-- /.login-logo -->
-  <div class="card card-maroon my-2">
-    <div class="card-body">
-      <p class="login-box-msg">Please enter your credentials</p>
-      <form id="login-frm" action="" method="post">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" name="username" autofocus placeholder="Username">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-user"></span>
-            </div>
-          </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Dormitory Management System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('/images/cover.png') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+        }
+        .login-box {
+            margin-top: 10%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .brand-title {
+            font-size: 36px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .developer-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 12px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+  {{-- <img src="{{ asset('/images/cover.png') }}" alt="Logo"> --}}
+    <div class="container d-flex justify-content-center align-items-center">
+      {{-- <div class="brand-title">School Dormitory Management System</div> --}}
+        <div class="login-box col-md-4 col-sm-6 col-12">
+            <div class="brand-title">Vui lòng nhập thông tin xác thực của bạn</div>
+            <form action="login.php" method="POST">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Sign In</button>
+            </form>
         </div>
-        <div class="input-group mb-3">
-          <input type="password" class="form-control"  name="password" placeholder="Password">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-8">
-            <!-- <a href="< ?php echo base_url ?>">Go to Website</a> -->
-          </div>
-          <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
-          </div>
-          <!-- /.col -->
-        </div>
-      </form>
-      <!-- /.social-auth-links -->
-
-      <!-- <p class="mb-1">
-        <a href="forgot-password.html">I forgot my password</a>
-      </p> -->
-      
     </div>
-    <!-- /.card-body -->
-  </div>
-  <!-- /.card -->
-</div>
-<!-- /.login-box -->
-
-<!-- jQuery -->
-<script src="<?= base_url ?>plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="<?= base_url ?>plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="<?= base_url ?>dist/js/adminlte.min.js"></script>
-
-<script>
-  $(document).ready(function(){
-    end_loader();
-  })
-</script>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
