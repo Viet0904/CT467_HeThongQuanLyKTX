@@ -13,7 +13,7 @@
 `php artisan key:generate`
 ## Bước 7: Chạy migration để tạo bảng trong database
 `php artisan migrate`
-## Bước 8: Chạy Serve
-`php artisan server`
+## Bước 8: Chạy Server
+`php artisan serve`
 
 
