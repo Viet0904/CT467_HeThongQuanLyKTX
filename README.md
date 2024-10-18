@@ -15,8 +15,7 @@
 <p> Do tôi cấu hình Mysql của XAMP là cổng 3308. Nêu cổng của bạn là 3306 hoặc khác thì sửa </p>
 
 ## Bước 6: Tạo Database bằng Xamp
-<p> Mở MySQL của Xamp và truy cập </p>  
-[MySQL](http://localhost/phpmyadmin/)  
+<p> Mở MySQL của Xamp và truy cập <a href="http://localhost/phpmyadmin/">MYySQL</a> </p>  
 <b>Tạo Database tên htqlktx</b>
 
 ## Bước 7: Tạo khóa bảo mật
