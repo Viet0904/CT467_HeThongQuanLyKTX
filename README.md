@@ -8,14 +8,14 @@
 ## Bước 4: Cài đặt các package cần thiết
 `composer install`
 ## Bước 5: Thiết lập file môi trường
-`cp .env.example .env` //
+`cp .env.example .env`  
 <b> Lưu ý </b>
 
 ![image](https://github.com/user-attachments/assets/04d378b1-5084-4d43-9d84-8f2db616afd8)
 <p> Do tôi cấu hình Mysql của XAMP là cổng 3308. Nêu cổng của bạn là 3306 hoặc khác thì sửa </p>
 
 ## Bước 6: Tạo Database bằng Xamp
-<p> Mở MySQL của Xamp và truy cập </p> http://localhost/phpmyadmin/ //
+<p> Mở MySQL của Xamp và truy cập </p> [MySQL](http://localhost/phpmyadmin/)  
 <b>Tạo Database tên htqlktx</b>
 
 ## Bước 7: Tạo khóa bảo mật
