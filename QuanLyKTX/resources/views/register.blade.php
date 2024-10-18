@@ -13,13 +13,6 @@
             background-size: cover;
             height: 100vh;
         }
-        .login-box {
-            margin-top: 10%;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
         #page-title{
         text-shadow: 6px 4px 7px black;
         font-size: 3.5em;
@@ -58,15 +51,15 @@
     
                         <div class="form-group form-check pt-4 d-flex justify-content-between align-items-center">
                             <div>
-                                <input type="checkbox" class="form-check-input" id="rememberMe">
-                                <label class="form-check-label" for="rememberMe">Ghi nhớ tôi</label>
+                                <input type="checkbox" class="form-check-input d-none" id="rememberMe">
+                                <label class="form-check-label d-none" for="rememberMe">Ghi nhớ tôi</label>
                             </div>
-                            <a href="{{ route('register') }}" class="text-decoration-none">Đăng ký</a>
+                            <a href="{{ route('index') }}" class="text-decoration-none">Đăng nhập</a>
                         </div>
                         
                         <button type="submit" class="btn btn-primary mt-3 w-100 mb-4" name="login">
                             <i class="fas fa-power-off"></i>
-                            <span href="" class="text-decoration-none text-white">Đăng nhập</span>
+                            <span href="" class="text-decoration-none text-white">Đăng ký</span>
                         </button>
                     </form>
                 </div>
