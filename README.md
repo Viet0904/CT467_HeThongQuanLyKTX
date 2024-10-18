@@ -9,9 +9,11 @@
 `composer install`
 ## Bước 5: Thiết lập file môi trường
 `cp .env.example .env`
-  *** Lưu ý***
-  ![image](https://github.com/user-attachments/assets/04d378b1-5084-4d43-9d84-8f2db616afd8)
-> Do tôi cấu hình Mysql của XAMP là cổng 3308. Nêu cổng của bạn là 3306 hoặc khác thì sửa
+<p> *** Lưu ý*** </p>
+
+![image](https://github.com/user-attachments/assets/04d378b1-5084-4d43-9d84-8f2db616afd8)
+<p> Do tôi cấu hình Mysql của XAMP là cổng 3308. Nêu cổng của bạn là 3306 hoặc khác thì sửa </p>
+
 ## Bước 6: Tạo khóa bảo mật
 `php artisan key:generate`
 ## Bước 7: Chạy migration để tạo bảng trong database
